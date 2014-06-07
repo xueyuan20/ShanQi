@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"成三棋"</string>
+    <string name="action_settings">"设置"</string>
+    <string name="hello_world">"欢迎使用成三棋～"</string>
+    <string name="player_black_result">" 黑子:%1$d	吃子:%2$d"</string>
+    <string name="player_white_result">" 白子:%1$d	吃子:%2$d"</string>
+
+    <string name="chess_tip">"步数:%1$d		 %2$s		%3$s"</string>
+
+    <string name="about">"棋盘有24个格点，下棋双方各有九个棋子，轮流下到棋盘上的空格点（注意：不能下新棋子到棋子被吃的空格点，只能移动棋子到此处）。\r\n如果一方有三个棋子连成一线，即成三，就可以选择吃掉对方的一个棋子。被吃的棋子不可以是对方已成三的棋子，除非对方所有棋子都成三了。\r\n在九个棋子都布放到棋盘上后，可以沿棋盘上的线条移动到相邻的位置来成三以吃掉对方的棋子。\r\n如果一方所剩下的棋子只有三个时，棋子可以\"飞\"到任何位置而不受只能移动到相邻位置的限制。当一方只剩下两个棋子或者他的所有棋子都不能移动时就算输。"</string>
+
+    <!-- 提示语 -->
+    <string name="warn_hill_chess">"亲～请先吃Hill外的棋子"</string>
+    <string name="warn_own_chess">"这是自家的棋子呀"</string>
+    <string name="warn_not_space">"不能下在这里哟"</string>
+    <string name="warn_not_adjpos">"亲～请移步相邻的位置哟"</string>
+    <string name="warn_illegal_position">"这个不是落子点哟，请点击棋盘中小黑点位置"</string>
+    <string name="warn_cannot_move">"这个棋子已无路可走了，请重新选择"</string>
+    <string name="result_win_white">"白子胜出～再来一局？"</string>
+    <string name="result_win_black">"黑子胜出～再来一局？"</string>
+
+    <!-- 菜单项 -->
+    <string name="sigle_player">"单人游戏"</string>
+    <string name="double_player">"双人游戏"</string>
+
+    <string name="menu_start">"开局"</string>
+    <string name="menu_sigle">"单人"</string>
+    <string name="menu_double">"双人"</string>
+    <string name="menu_undo">"悔棋"</string>
+    <string name="menu_reselect">"重选"</string>
+    <string name="menu_rules">"规则"</string>
+    <string name="menu_exit">"退出"</string>
+    <string name="menu_feedback">"用户反馈"</string>
+    <string name="menu_share">"分享"</string>
+
+    <string name="feedback">"用户反馈"</string>
+    <string name="update">"版本更新(最新版本)"</string>
+    <string name="update_new">"版本更新(有更新)"</string>
+    <string name="app_desc">"软件介绍"</string>
+</resources>

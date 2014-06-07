@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chensanqi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <!-- 用户反馈和版本更新需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <meta-data android:value="538dbd8656240ba0fb00d4f6" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="appStore" android:name="UMENG_CHANNEL"/>
+
+        <activity
+            android:name="com.example.chensanqi.MainActivity"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.chensanqi.AboutActivity"
+            android:label="@string/app_desc"
+            android:theme="@style/TitleActivityTheme"></activity>
+        <activity android:name="com.example.chensanqi.AppDescActivity"
+            android:label="@string/app_desc" />
+
+        <!-- 用户反馈-开始 -->
+        <activity android:name="com.umeng.fb.ConversationActivity"
+         android:theme="@style/AppTheme"/>
+        <activity android:name="com.umeng.fb.ContactActivity"
+         android:theme="@style/AppTheme"/>
+        <!-- 用户反馈-结束 -->
+
+        <!-- 版本更新服务和页面-开始 -->
+        <service
+		    android:name="com.umeng.update.net.DownloadingService"
+		    android:process=":DownloadingService" >
+		</service>
+		<activity 
+		    android:name="com.umeng.update.UpdateDialogActivity"
+		    android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+		</activity>
+		<!-- 版本更新服务和页面-结束 -->
+
+	</application>
+
+</manifest>
